@@ -24,19 +24,6 @@ To run this example skill you need to do two things. The first is to deploy the 
 13. Set the Event Source type as Alexa Skills kit and Enable it now. Click Submit.
 14. Copy the ARN from the top right to be used later in the Alexa Skill Setup.
 
-### Alexa Skill Setup
-1. Go to the [Alexa Console](https://developer.amazon.com/edw/home.html) and click Add a New Skill.
-2. Set "WiseGuy" as the skill name and "wise guy" as the invocation name, this is what is used to activate your skill. For example you would say: "Alexa, Ask wise guy for a joke."
-3. Select the Lambda ARN for the skill Endpoint and paste the ARN copied from above. Click Next.
-4. Copy the custom slot types from the customSlotTypes folder. Each file in the folder represents a new custom slot type. The name of the file is the name of the custom slot type, and the values in the file are the values for the custom slot.
-5. Copy the Intent Schema from the included IntentSchema.json.
-6. Copy the Sample Utterances from the included SampleUtterances.txt. Click Next.
-7. [optional] go back to the skill Information tab and copy the appId. Paste the appId into the index.js file for the variable APP_ID,
-   then update the lambda source zip file with this change and upload to lambda again, this step makes sure the lambda function only serves request from authorized source.
-8. You are now able to start testing your sample skill! You should be able to go to the [Echo webpage](http://echo.amazon.com/#skills) and see your skill enabled.
-9. In order to test it, try to say some of the Sample Utterances from the Examples section below.
-10. Your skill is now saved and once you are finished testing you can continue to publish your skill.
-
 ## Examples
 ### Dialog model:
     User: "Alexa, ask Wise Guy to tell me a knock knock joke."
